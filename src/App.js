@@ -15,8 +15,6 @@ class App extends Component {
   }
 
   render() {
-    var test = "whatever";
-
     return (
       <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
