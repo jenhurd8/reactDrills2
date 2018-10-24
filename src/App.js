@@ -1,27 +1,20 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      message: ""
+      foods: ["potatoes", "fries", "hash browns", "wedges", "mashed"]
     };
   }
 
-  newWord(value) {
-    this.setState({ message: value });
-  }
-
   render() {
+    var myArray = this.state.foods.map(a => <p>{a}</p>);
+
     return (
-      <div className="App">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div>
-          <input onChange={e => this.newWord(e.target.value)} />
-          <p>{this.state.message}</p>
-        </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <h2>{myArray}</h2>
       </div>
     );
   }
