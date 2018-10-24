@@ -14,6 +14,7 @@ class App extends Component {
 
     return (
       <div style={{ display: "flex", justifyContent: "center" }}>
+        <h2>Foods List</h2>
         <h2>{myArray}</h2>
       </div>
     );
