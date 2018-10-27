@@ -17,6 +17,7 @@ class App extends Component {
         <h2>Foods List</h2>
         <h2>{myArray}</h2>
         <h2>{myArray}</h2>
+        <p>End</p>
       </div>
     );
   }
